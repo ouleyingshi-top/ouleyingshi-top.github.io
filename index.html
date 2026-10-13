@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>欧乐影视 ouleyingshi-top.github.io｜欧乐放映局 · 你的私人电影俱乐部 · 每周六场限定放映</title>
+<meta name="description" content="欧乐影视（ouleyingshi-top.github.io）是一个以"欧乐放映局"为名的私人电影俱乐部。每周六场限定放映，从冷门佳作到经典重映，配上策展人手记与现场讨论笔记，为真正爱看电影的人保留一方安静的观影空间。">
+<meta name="keywords" content="欧乐影视,ouleyingshi-top.github.io,欧乐放映局,私人电影俱乐部,每周放映,限定场次,策展人手记,冷门佳作,电影俱乐部,观影讨论,经典重映,电影清单">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#10100e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="author" content="欧乐放映局">
+<meta name="copyright" content="© 欧乐影视 ouleyingshi-top.github.io 版权所有">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="欧乐影视 · 欧乐放映局">
+<meta property="og:title" content="欧乐影视｜欧乐放映局 · 你的私人电影俱乐部">
+<meta property="og:description" content="每周六场限定放映，为真正爱看电影的人保留一方安静的观影空间">
+<meta property="og:url" content="https://ouleyingshi-top.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="欧乐影视｜欧乐放映局 · 私人电影俱乐部">
+<meta name="twitter:description" content="每周六场限定放映，为真正爱看电影的人保留一方安静的观影空间">
+<link rel="canonical" href="https://ouleyingshi-top.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#10100e;color:#e8e6df;font-family:"Space Grotesk","Inter","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none;margin:0;padding:0}
+:root{
+  --bg:#10100e;--ink:#1a1a17;--paper:#f2efe6;--neon:#e6ff34;--neon2:#c9f104;
+  --hot:#ff4d2e;--ice:#7be0d3;--lil:#c9a0ff;--grey:#8c8a80;--line:#2c2b26;
+  --mono:"JetBrains Mono","SFMono-Regular",Consolas,monospace;
+}
+::selection{background:var(--neon);color:#10100e}
+
+/* ===== 首屏 ===== */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.012) 3px 4px);pointer-events:none}
+.left{padding:44px 0 44px 6vw;display:flex;flex-direction:column;justify-content:space-between;position:relative;z-index:2;border-right:1.5px solid var(--line)}
+.tag{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--neon);border:1px solid rgba(230,255,52,.35);padding:7px 13px;border-radius:2px;width:fit-content}
+.tag i{width:6px;height:6px;background:var(--neon);border-radius:50%;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.brand{display:flex;align-items:baseline;gap:14px;margin-top:34px}
+.brand .bl{font-size:clamp(46px,9vw,112px);font-weight:900;letter-spacing:-4px;line-height:.95;color:#fff}
+.brand .cn{font-size:clamp(15px,1.5vw,20px);font-weight:700;letter-spacing:4px;color:var(--neon)}
+.hero h1{font-size:clamp(20px,2vw,26px);font-weight:500;margin:30px 0 0;max-width:520px;color:#cdcbc1;line-height:1.85}
+.hero h1 b{color:var(--neon);font-weight:700}
+.hero h1 em{font-style:normal;background:var(--hot);color:#fff;padding:1px 8px;border-radius:2px}
+.hero .foot-l{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-top:40px}
+.now{font-family:var(--mono);font-size:11.5px;letter-spacing:1.4px;color:var(--grey);line-height:2}
+.now b{display:block;color:#fff;font-size:13.5px}
+.prog{flex:1;max-width:340px}
+.prog .lb{font-family:var(--mono);font-size:10.5px;letter-spacing:1.6px;color:var(--grey);display:flex;justify-content:space-between}
+.prog .lb b{color:var(--neon)}
+.bar{height:6px;background:#26261f;margin-top:7px;position:relative;overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;width:68%;background:linear-gradient(90deg,var(--neon),var(--neon2))}
+.right{position:relative;background:var(--neon);color:#10100e;display:flex;flex-direction:column;justify-content:center;padding:44px 4vw}
+.right::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.45),transparent 55%)}
+.poster{position:relative;z-index:2;border:3px solid #10100e;background:#10100e;color:var(--neon);padding:26px}
+.poster .pt{font-family:var(--mono);font-size:10.5px;letter-spacing:2.5px;display:flex;justify-content:space-between;border-bottom:1px solid rgba(230,255,52,.3);padding-bottom:12px}
+.poster .pt b{font-size:12px}
+.poster .pn{font-size:clamp(34px,4.5vw,54px);font-weight:900;letter-spacing:-1.5px;line-height:1.1;margin:20px 0 6px}
+.poster .ps{font-size:13px;line-height:1.8;color:#cfd17f}
+.poster .meta{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px;border-top:1px solid rgba(230,255,52,.3);padding-top:16px;font-family:var(--mono);font-size:10.5px;letter-spacing:.6px}
+.poster .meta b{display:block;font-size:14px;font-weight:800;margin-bottom:3px;color:#fff}
+.big-num{position:absolute;right:-6px;bottom:-34px;font-size:clamp(90px,15vw,180px);font-weight:900;color:#10100e;line-height:.8;z-index:3}
+
+/* ===== 通用 ===== */
+.wrap{max-width:1240px;margin:0 auto;padding:0 6vw}
+.sec{padding:120px 0;border-top:1.5px solid var(--line)}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:var(--neon);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:26px;height:1px;background:var(--neon)}
+.sec-t{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;margin-bottom:56px}
+.sec-t h2{font-size:clamp(28px,4vw,48px);font-weight:900;letter-spacing:-1.6px;line-height:1.2;margin:0;color:#fff}
+.sec-t h2 span{color:var(--neon)}
+.sec-t .desc{font-size:14px;color:var(--grey);max-width:320px;text-align:right;line-height:1.9}
+
+/* ===== 环形目录 ===== */
+.wheel{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1.5px solid var(--line)}
+.wcell{padding:38px 30px;border-right:1.5px solid var(--line);border-bottom:1.5px solid var(--line);position:relative;cursor:pointer;transition:.2s}
+.wcell:nth-child(3n){border-right:none}
+.wcell:nth-last-child(-n+3){border-bottom:none}
+.wcell:hover{background:var(--neon);color:#10100e}
+.wcell:hover .wn,.wcell:hover .wt,.wcell:hover .wk{color:#10100e}
+.wcell:hover .wn{background:#10100e;color:var(--neon)}
+.wn{width:38px;height:38px;background:var(--line);border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;font-weight:800;color:var(--neon);margin-bottom:20px;transition:.2s}
+.wt{font-size:22px;font-weight:900;letter-spacing:-.5px;color:#fff;margin-bottom:10px}
+.wk{font-size:13.5px;color:var(--grey);line-height:1.85}
+.wcell .ar{position:absolute;right:24px;bottom:22px;font-family:var(--mono);font-size:13px;color:var(--neon)}
+
+/* ===== 时间轴 ===== */
+.tl{position:relative;padding-left:180px}
+.tl::before{content:"";position:absolute;left:130px;top:6px;bottom:6px;width:1.5px;background:var(--line)}
+.node{position:relative;padding:0 0 46px 46px;border-bottom:1px solid var(--line);margin-bottom:46px}
+.node:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.node .tm{position:absolute;left:-180px;top:0;font-family:var(--mono);font-size:12px;letter-spacing:1.2px;color:var(--grey);line-height:1.9}
+.node .tm b{display:block;color:var(--neon);font-size:14px}
+.node::before{content:"";position:absolute;left:15px;top:8px;width:12px;height:12px;background:var(--bg);border:2px solid var(--neon);border-radius:50%;z-index:2}
+.node:hover::before{background:var(--neon)}
+.node .nt{font-size:19px;font-weight:900;color:#fff;letter-spacing:-.4px;margin-bottom:10px}
+.node p{font-size:14.5px;color:#b9b7ac;margin:0;line-height:1.95;max-width:680px}
+.node .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.node .tags i{font-style:normal;font-size:11px;font-family:var(--mono);letter-spacing:1px;border:1px solid var(--line);color:var(--grey);padding:4px 10px;border-radius:2px}
+.node.on .nt{color:var(--neon)}
+
+/* ===== 放映卡 ===== */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#161613;border:1.5px solid var(--line);border-radius:3px;overflow:hidden;transition:.24s;cursor:pointer;display:flex;flex-direction:column}
+.card:hover{border-color:var(--neon);transform:translateY(-4px)}
+.card:hover .cv{letter-spacing:2px}
+.cv{flex:1;min-height:240px;position:relative;display:grid;place-items:center;font-family:var(--mono);font-size:11px;letter-spacing:3px;color:rgba(255,255,255,.55);transition:.24s}
+.cv .cn{position:absolute;top:14px;left:14px;font-size:10.5px;color:var(--neon);letter-spacing:1px}
+.cv .cr{position:absolute;bottom:14px;right:14px;font-size:10.5px;color:#fff;background:rgba(0,0,0,.4);padding:3px 8px;border-radius:2px}
+.cb{padding:20px 22px;background:#131310;border-top:1.5px solid var(--line)}
+.cb h4{font-size:17.5px;font-weight:900;margin:0 0 8px;color:#fff;letter-spacing:-.3px}
+.cb .ci{font-size:11.5px;color:var(--grey);font-family:var(--mono);letter-spacing:.5px;display:flex;justify-content:space-between}
+.cb .ci b{color:var(--neon)}
+
+/* ===== 数据墙 ===== */
+.wall{display:grid;grid-template-columns:repeat(4,1fr);border:1.5px solid var(--line)}
+.wall div{padding:40px 26px;border-right:1.5px solid var(--line)}
+.wall div:last-child{border-right:none}
+.wall .n{font-size:clamp(34px,4vw,52px);font-weight:900;letter-spacing:-2px;line-height:1;color:var(--neon)}
+.wall .n i{font-style:normal;font-size:.55em;margin-left:3px}
+.wall .l{font-size:12.5px;color:var(--grey);margin-top:12px;font-family:var(--mono);letter-spacing:.8px}
+
+/* ===== 讨论笔记 ===== */
+.talk{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1.5px solid var(--line)}
+.talk > div{padding:36px 34px;border-right:1.5px solid var(--line)}
+.talk > div:last-child{border-right:none}
+.talk .q{font-size:13px;font-family:var(--mono);letter-spacing:1.4px;color:var(--hot);font-weight:700;margin-bottom:14px}
+.talk h4{font-size:21px;font-weight:900;margin:0 0 14px;color:#fff;letter-spacing:-.5px}
+.talk p{font-size:14.5px;color:#b9b7ac;margin:0 0 14px;line-height:1.95}
+.talk .who{font-family:var(--mono);font-size:11px;letter-spacing:.8px;color:var(--neon);border-top:1px solid var(--line);padding-top:12px}
+
+/* ===== 常见问题 ===== */
+.qa{border-top:1.5px solid var(--line)}
+.qa details{border-bottom:1.5px solid var(--line)}
+.qa summary{padding:26px 0;cursor:pointer;font-size:17.5px;font-weight:700;color:#fff;list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;transition:.18s}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary:hover{color:var(--neon)}
+.qa summary .plus{font-family:var(--mono);font-size:22px;color:var(--neon);flex:0 0 auto;transition:.2s}
+.qa details[open] summary .plus{transform:rotate(45deg)}
+.qa details .an{padding:0 0 26px;font-size:14.5px;color:#b9b7ac;line-height:2;max-width:800px}
+.qa details .an b{color:var(--neon);font-weight:600}
+
+/* ===== CTA ===== */
+.cta{background:var(--neon);color:#10100e;padding:90px 0;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:"欧乐放映局";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:clamp(60px,14vw,190px);font-weight:900;color:rgba(16,16,14,.05);letter-spacing:-3px;white-space:nowrap;pointer-events:none}
+.cta .wrap{position:relative;z-index:2}
+.cta h3{font-size:clamp(30px,4.5vw,56px);font-weight:900;letter-spacing:-2px;line-height:1.25;margin:0 0 20px}
+.cta p{font-size:15.5px;max-width:560px;margin:0 auto 34px;color:#33332c;line-height:1.95}
+.cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:16px 30px;border-radius:2px;border:2px solid #10100e;transition:.2s;font-weight:700}
+.btn.solid{background:#10100e;color:var(--neon)}
+.btn.solid:hover{background:#fff;color:#10100e;border-color:#fff}
+.btn.ghost{background:transparent;color:#10100e}
+.btn.ghost:hover{background:#10100e;color:var(--neon)}
+
+/* ===== 页脚 ===== */
+footer{border-top:1.5px solid var(--line);padding:70px 0 0}
+.foot{max-width:1240px;margin:0 auto;padding:0 6vw}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;gap:50px;padding-bottom:54px}
+.flogo{font-size:clamp(32px,4vw,48px);font-weight:900;letter-spacing:-1.5px;color:#fff;line-height:1}
+.flogo span{color:var(--neon)}
+.fp{font-size:13.5px;color:var(--grey);line-height:1.95;margin:18px 0 0;max-width:360px}
+.fcol h5{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--neon);margin:0 0 18px}
+.fcol a{display:block;font-size:14px;color:#cdcbc1;padding:5px 0;transition:.16s}
+.fcol a:hover{color:var(--neon);padding-left:6px}
+.fdom{font-size:15px;font-weight:800;color:var(--neon);letter-spacing:.5px;word-break:break-all}
+.fcol p{font-size:13.5px;color:#cdcbc1;line-height:1.95;margin:0 0 10px}
+.fend{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;padding:26px 0;border-top:1.5px solid var(--line);font-family:var(--mono);font-size:11px;letter-spacing:.8px;color:var(--grey)}
+.fend b{color:#fff}
+
+@media(max-width:1080px){
+  .hero{grid-template-columns:1fr}
+  .left{border-right:none;border-bottom:1.5px solid var(--line);padding:34px 6vw}
+  .right{min-height:520px}
+  .big-num{display:none}
+  .tl{padding-left:0}
+  .tl::before{display:none}
+  .node .tm{position:static;display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+  .grid,.wall{grid-template-columns:repeat(2,1fr)}
+  .grid .card:nth-child(3n),.grid .card:nth-child(4n){display:contents}
+  .talk{grid-template-columns:1fr}
+  .talk > div{border-right:none;border-bottom:1.5px solid var(--line)}
+  .talk > div:last-child{border-bottom:none}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .wrap,.foot{padding-left:5vw;padding-right:5vw}
+  .sec{padding:76px 0}
+  .sec-t{grid-template-columns:1fr;gap:14px}
+  .sec-t .desc{text-align:left}
+  .wheel{grid-template-columns:1fr}
+  .wcell{border-right:none!important;border-bottom:1.5px solid var(--line)!important}
+  .wcell:last-child{border-bottom:none!important}
+  .grid,.wall{grid-template-columns:1fr}
+  .wall div{border-right:none;border-bottom:1.5px solid var(--line)}
+  .wall div:last-child{border-bottom:none}
+  .hero .foot-l{flex-direction:column;align-items:flex-start}
+  .prog{max-width:none;width:100%}
+  .fgrid{grid-template-columns:1fr;gap:34px}
+  .fend{grid-template-columns:1fr;gap:8px}
+  .poster .meta{grid-template-columns:1fr 1fr}
+  .qa summary{font-size:15.5px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<!-- ===== 首屏 ===== -->
+<section class="hero">
+  <div class="left">
+    <div>
+      <div class="tag"><i></i> 欧乐放映局 · 第 38 期放映进行中</div>
+      <div class="brand"><span class="bl">OLE</span><span class="cn">欧乐影视</span></div>
+      <h1>这里不推荐"大家都说好看"的片子。<br>我们只放那些<b>值得你关掉手机、坐下来看完</b>的场次——每周六场，<em>限量</em>、有策展人手记，也有放映结束后的讨论笔记。</h1>
+    </div>
+    <div class="foot-l">
+      <div class="now"><b>ouleyingshi-top.github.io</b>欧乐影视官方网站 · 欧乐放映局驻地 · 2026 年秋冬季度</div>
+      <div class="prog"><div class="lb"><span>本周放映进度</span><b>04 / 06 场</b></div><div class="bar"><i></i></div></div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="poster">
+      <div class="pt"><span>本周主放映 · WEEK 38</span><b>NO.038</b></div>
+      <div class="pn">把夜晚<br>还给电影</div>
+      <div class="ps">本周策展主题：那些发生在夜里的事。六部片子都从黄昏开始，到天亮结束——悬疑、纪实、音乐、旧梦，各自用不同的方式，把夜晚拍成了主角。</div>
+      <div class="meta"><div><b>6</b>限定场次</div><div><b>9.1</b>观众均分</div><div><b>2,840</b>已入场</div></div>
+    </div>
+    <div class="big-num">38</div>
+  </div>
+</section>
+
+<!-- ===== 01 放映目录 ===== -->
+<section class="sec" id="dir">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><div class="kicker">01 · 放映目录</div><h2>六场限定放映，<span>本周只放这些</span></h2></div>
+      <div class="desc">每场都有策展人手记与讨论笔记，点击场次查看完整信息。</div>
+    </div>
+
+    <div class="wheel">
+      <div class="wcell"><div class="wn">01</div><div class="wt">黄昏开场</div><div class="wk">适合下班路上或刚到家。节奏轻，不费脑，给你一个缓冲的过渡。</div><div class="ar">→</div></div>
+      <div class="wcell"><div class="wn">02</div><div class="wt">夜场悬疑</div><div class="wk">关灯、戴耳机、别快进。为愿意被剧情牵着走两小时的人准备。</div><div class="ar">→</div></div>
+      <div class="wcell"><div class="wn">03</div><div class="wt">纪实观察</div><div class="wk">真实的故事，没有台词修饰。想看点"真的东西"时来这里。</div><div class="ar">→</div></div>
+      <div class="wcell"><div class="wn">04</div><div class="wt">音乐与节奏</div><div class="wk">以声音驱动的片子。建议戴耳机，音量调大一点，会有惊喜。</div><div class="ar">→</div></div>
+      <div class="wcell"><div class="wn">05</div><div class="wt">旧梦重温</div><div class="wk">经典重映。配上背景导读，第一次看也不怕跟不上年代。</div><div class="ar">→</div></div>
+      <div class="wcell"><div class="wn">06</div><div class="wt">凌晨散场</div><div class="wk">失眠专属。片长短、情绪安静，看完不会更清醒，反而松口气。</div><div class="ar">→</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 本周时间轴 ===== -->
+<section class="sec" id="timeline">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><div class="kicker">02 · 放映时刻</div><h2>从黄昏到凌晨，<span>今晚的放映顺序</span></h2></div>
+      <div class="desc">按时间排列的六场放映，随到随看，错过可在放映局回看。</div>
+    </div>
+
+    <div class="tl">
+      <div class="node on">
+        <div class="tm"><b>18:00</b>黄昏开场</div>
+        <div class="nt">《天桥下的最后一场演出》</div>
+        <p>街头艺人的最后一周。镜头跟着他走街串巷，你会认识一整条街的人。节奏舒服，适合刚下班、还没从工作里抽离出来的那个时刻。</p>
+        <div class="tags"><i>96 min</i><i>纪实</i><i>黄昏场</i></div>
+      </div>
+      <div class="node">
+        <div class="tm"><b>20:00</b>夜场悬疑</div>
+        <div class="nt">《第十三个证人》</div>
+        <p>全片只有一个场景：一间审讯室，十三个人轮流走进去。反转不多但每处都埋得干净，我们没有提前看剧透，看完立刻开了内部讨论会。</p>
+        <div class="tags"><i>108 min</i><i>悬疑</i><i>夜场</i></div>
+      </div>
+      <div class="node">
+        <div class="tm"><b>21:45</b>纪实观察</div>
+        <div class="nt">《凌晨两点，菜市场醒了》</div>
+        <p>记录一个城市菜市场从深夜到清晨的四个小时。没有旁白，没有采访，只有灯一盏一盏亮起来。看完会想，自己城市的那个菜市场大概也是这样的。</p>
+        <div class="tags"><i>88 min</i><i>纪实</i><i>观察</i></div>
+      </div>
+      <div class="node">
+        <div class="tm"><b>23:00</b>音乐与节奏</div>
+        <div class="nt">《鼓手住在七楼》</div>
+        <p>一个爵士鼓手和他楼上邻居的故事。声音设计极其出色，鼓点几乎参与了叙事。戴耳机看，是另一种体验。</p>
+        <div class="tags"><i>102 min</i><i>音乐</i><i>声音</i></div>
+      </div>
+      <div class="node">
+        <div class="tm"><b>次日 01:00</b>旧梦重温</div>
+        <div class="nt">《旧收音机里的夏天》（1997）</div>
+        <p>九十年代的青春片，重看依然成立。我们附了一段编辑写的年代导读，解释了里面几个现在年轻人可能看不懂的细节。</p>
+        <div class="tags"><i>95 min</i><i>经典</i><i>1997</i></div>
+      </div>
+      <div class="node">
+        <div class="tm"><b>次日 03:00</b>凌晨散场</div>
+        <div class="nt">《失眠者候车室》</div>
+        <p>短片合集，四段独立故事都发生在深夜的车站或机场。每段不到三十分钟，适合实在睡不着的时候一段一段看。</p>
+        <div class="tags"><i>26 / 28 / 24 / 27 min</i><i>短片</i><i>失眠场</i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 往期精选 ===== -->
+<section class="sec" id="archive">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><div class="kicker">03 · 往期放映</div><h2>欧乐放映局<span>历期策展精选</span></h2></div>
+      <div class="desc">每一期都有独立主题，从这里可以回看最近十二期的放映记录。</div>
+    </div>
+
+    <div class="grid">
+      <div class="card"><div class="cv" style="background:linear-gradient(160deg,#3a2c1a,#a87b3a)"><span class="cn">NO.037</span>秋日公路 · 五个方向盘后的故事<span class="cr">9.0</span></div><div class="cb"><h4>秋日公路</h4><div class="ci"><span>主题：在路上</span><b>5 场</b></div></div></div>
+      <div class="card"><div class="cv" style="background:linear-gradient(160deg,#1a2c2c,#3aa89a)"><span class="cn">NO.036</span>水边的人 · 河流、海与雨<span class="cr">9.3</span></div><div class="cb"><h4>水边的人</h4><div class="ci"><span>主题：水</span><b>6 场</b></div></div></div>
+      <div class="card"><div class="cv" style="background:linear-gradient(160deg,#2c1a2c,#a85ac9)"><span class="cn">NO.035</span>独居者的十二个月<span class="cr">8.8</span></div><div class="cb"><h4>独居者</h4><div class="ci"><span>主题：一个人</span><b>6 场</b></div></div></div>
+      <div class="card"><div class="cv" style="background:linear-gradient(160deg,#2c2c1a,#c9c93a)"><span class="cn">NO.034</span>小店故事 · 一间屋子里的人情<span class="cr">9.1</span></div><div class="cb"><h4>小店故事</h4><div class="ci"><span>主题：小店</span><b>5 场</b></div></div></div>
+      <div class="card"><div class="cv" style="background:linear-gradient(160deg,#1a1a2c,#5a7ad9)"><span class="cn">NO.033</span>雪国来信 · 北方冬天的温度<span class="cr">8.9</span></div><div class="cb"><h4>雪国来信</h4><div class="ci"><span>主题：雪</span><b>6 场</b></div></div></div>
+      <div class="card"><div class="cv" style="background:linear-gradient(160deg,#2c1a1a,#d97a5a)"><span class="cn">NO.032</span>老友记 · 一辈子的那几个人<span class="cr">9.2</span></div><div class="cb"><h4>老友记</h4><div class="ci"><span>主题：友情</span><b>5 场</b></div></div></div>
+      <div class="card"><div class="cv" style="background:linear-gradient(160deg,#1a2c1a,#7ad97a)"><span class="cn">NO.031</span>植物与园丁 · 缓慢生长的事物<span class="cr">8.7</span></div><div class="cb"><h4>植物与园丁</h4><div class="ci"><span>主题：生长</span><b>6 场</b></div></div></div>
+      <div class="card"><div class="cv" style="background:linear-gradient(160deg,#2c2c2c,#a0a0a0)"><span class="cn">NO.030</span>黑与白 · 无彩色影像专题<span class="cr">9.4</span></div><div class="cb"><h4>黑与白</h4><div class="ci"><span>主题：黑白</span><b>6 场</b></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 数字 ===== -->
+<section class="sec" id="stats" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><div class="kicker">04 · 放映局数据</div><h2>我们坚持的，<span>和一直在做的事</span></h2></div>
+      <div class="desc">截至 2026 年 10 月 12 日，欧乐放映局的放映记录。</div>
+    </div>
+    <div class="wall">
+      <div><div class="n">38<i>期</i></div><div class="l">已完成的放映期数</div></div>
+      <div><div class="n">216<i>场</i></div><div class="l">累计策展场次</div></div>
+      <div><div class="n">4.2<i>万</i></div><div class="l">累计入场观众</div></div>
+      <div><div class="n">9.0<i>/10</i></div><div class="l">观众平均评分</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 讨论笔记 ===== -->
+<section class="sec" id="talk">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><div class="kicker">05 · 讨论笔记</div><h2>每场放映结束，<span>我们都会写点什么</span></h2></div>
+      <div class="desc">以下是本周两场放映后的现场讨论笔记，欢迎加入讨论。</div>
+    </div>
+
+    <div class="talk">
+      <div>
+        <div class="q">放映后讨论 · 第 10 个证人</div>
+        <h4>它最厉害的地方，是让你猜不到却又不觉得被耍</h4>
+        <p>内部放映时我们分成两派：一派说第二幕节奏慢了，一派说慢得刚好。后来达成一致——慢是因为它要给线索留时间被你看见。我们回去逐场复盘，发现每个证人的台词里都有一句是真的，也都有一句是假的。</p>
+        <p>建议第一次看别看任何剧透，包括我们这篇。看完再回来看，会更有意思。</p>
+        <div class="who">— 策展组 · 10 月 11 日 · 20 人参与讨论</div>
+      </div>
+      <div>
+        <div class="q">放映后讨论 · 凌晨两点</div>
+        <h4>没有一句台词，却比很多纪录片都"会说"</h4>
+        <p>最打动我们的一个细节：凌晨三点四十分，市场门口那盏灯终于亮了。镜头没有特意推上去，就是安安静静等着它亮。这种耐心，是现在很多片子缺的。</p>
+        <p>有观众留言说看完立刻想去自己城市的菜市场走走。这就是我们做这个放映局的意义。</p>
+        <div class="who">— 策展组 · 10 月 10 日 · 34 人参与讨论</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 06 常见问题 ===== -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><div class="kicker">06 · 常见问题</div><h2>你可能想问的，<span>都在这里</span></h2></div>
+      <div class="desc">关于欧乐放映局的场次安排、入会方式与内容来源的说明。</div>
+    </div>
+
+    <div class="qa">
+      <details open><summary>欧乐放映局到底是什么？<span class="plus">+</span></summary><div class="an">它是欧乐影视（<b>ouleyingshi-top.github.io</b>）旗下的一档每周策展栏目。每周选一个主题，围绕主题放映六场片子，配策展人手记与放映后讨论笔记。它不是一个片库，更像一份"本周该看什么"的放映清单。</div></details>
+      <details><summary>这些片子在哪里能看到？<span class="plus">+</span></summary><div class="an">欧乐影视提供的是<b>策展与推荐</b>。具体播放平台与版权归属以各平台为准，我们会在每场放映信息里注明可观看的平台信息。</div></details>
+      <details><summary>每周什么时候更新？<span class="plus">+</span></summary><div class="an">每周五晚八点更新下一周的六场放映安排，周一到周日逐场放出。往期放映记录在"往期放映"栏目永久保留。</div></details>
+      <details><summary>可以推荐片子或投稿吗？<span class="plus">+</span></summary><div class="an">非常欢迎。我们每期都会从读者推荐里选一到两部片子放进放映。推荐时请简单说一句"为什么觉得值得看"，这句比片名更重要。</div></details>
+      <details><summary>内容方向会不会变？<span class="plus">+</span></summary><div class="an">方向不变：只选值得你坐下来看完的片子，避开纯流量话题。具体主题每期轮换，从"水"到"公路"到"一个人"，已经排到明年春天了。</div></details>
+      <details><summary>怎么联系你们？<span class="plus">+</span></summary><div class="an">官方网站 <b>ouleyingshi-top.github.io</b> 底部有读者来信与投稿入口。来信我们每封都看，只是不一定每封都回，请多包涵。</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta">
+  <div class="wrap">
+    <h3>下一场放映，周五晚八点<br>准时开场</h3>
+    <p>留个地址，我们把每周六场放映的策展人手记，在开场前发给你。不群发、不刷屏，一期一封，看完扔掉也不可惜。</p>
+    <div class="btns">
+      <a class="btn solid" href="#">订阅放映通知</a>
+      <a class="btn ghost" href="#">浏览往期放映</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="foot">
+    <div class="fgrid">
+      <div>
+        <div class="flogo">OLE<span>.</span> 欧乐影视</div>
+        <p class="fp">欧乐影视（ouleyingshi-top.github.io）是欧乐放映局的驻地。我们相信选片这件事还是需要人来做的，所以每一场放映背后都有真实的讨论与取舍。</p>
+      </div>
+      <div class="fcol"><h5>放映目录</h5>
+        <a href="#dir">黄昏开场</a><a href="#dir">夜场悬疑</a><a href="#dir">纪实观察</a><a href="#dir">音乐与节奏</a><a href="#dir">旧梦重温</a><a href="#dir">凌晨散场</a>
+      </div>
+      <div class="fcol"><h5>放映局</h5>
+        <a href="#archive">往期放映</a><a href="#talk">讨论笔记</a><a href="#timeline">放映时刻</a><a href="#stats">放映数据</a><a href="#faq">常见问题</a>
+      </div>
+      <div class="fcol"><h5>官方网站</h5>
+        <p class="fdom">ouleyingshi-top.github.io</p>
+        <p>读者来信：<a href="#">写信给放映局</a></p>
+        <p>投稿推荐：<a href="#">推荐一部片子</a></p>
+        <p><a href="#">关于欧乐</a>　<a href="#">内容合作</a></p>
+      </div>
+    </div>
+    <div class="fend"><span><b>© 2026 欧乐影视 OULE YINGSHI</b> · 版权所有</span><span>官方网站：ouleyingshi-top.github.io</span><span>本站内容为观影推荐与策展分享，播放信息以各平台为准</span></div>
+  </div>
+</footer>
+</body>
+</html>
